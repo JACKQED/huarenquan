@@ -9,7 +9,7 @@
 <script>
 // CONFIG: 将以下两个公开配置值替换为 Supabase 项目里的 Project URL 和 publishable/anon key。
 // 绝不能把 service_role 或 secret key 放进此文件。
-const SUPABASE_URL = 'https://svafquzbjgbziplblkmw.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://svafquzbjgbziplblkmw.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_pqZd-aPLnAIvRyiozXUrZg_-epOLOPd';
 const configured = /^https:\/\//.test(SUPABASE_URL) && !SUPABASE_ANON_KEY.startsWith('PASTE_');
 const db = configured && window.supabase ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
