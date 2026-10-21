@@ -9,8 +9,8 @@
 <script>
 // CONFIG: 将以下两个公开配置值替换为 Supabase 项目里的 Project URL 和 publishable/anon key。
 // 绝不能把 service_role 或 secret key 放进此文件。
-const SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'PASTE_YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY';
+const SUPABASE_URL = 'https://svafquzbjgbziplblkmw.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'sb_publishable_pqZd-aPLnAIvRyiozXUrZg_-epOLOPd';
 const configured = /^https:\/\//.test(SUPABASE_URL) && !SUPABASE_ANON_KEY.startsWith('PASTE_');
 const db = configured && window.supabase ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 const categories=[['💬','华人闲话'],['🏡','房产家居'],['💼','职场求职'],['🎓','教育育儿'],['🛍️','购物折扣'],['🌎','北美生活'],['💰','理财退休'],['💪','健康生活'],['📍','本地城市'],['✈️','旅游出行']];
